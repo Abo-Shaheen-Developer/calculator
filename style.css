@@ -1,0 +1,103 @@
+* {
+    user-select: none;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    background-image: linear-gradient(to right, rgb(0, 6, 51), rgb(55, 0, 255));
+}
+
+.Edges {
+    background: rgba(255, 255, 255, 0.137);
+    border: solid 1px rgba(255, 255, 255, 0.514);
+    width: 400px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    padding: 20px;
+    display: grid;
+    padding: 10px;
+}
+
+@media (min-width:300px) and (max-width:480px) {
+    .Edges {
+        width: 90%;
+    }
+}
+
+.Innerbody {
+    background: rgba(255, 255, 255, 0.596);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: -100px 100px 1000000px rgb(1, 90, 255);
+}
+
+.D-input {
+    background: rgba(255, 255, 255, 0.774);
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 80px);
+    gap: 10px;
+    
+}
+
+.button {
+    background: rgb(20, 46, 95);
+    font-size: 25px;
+    color: white;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.589);
+}
+
+.button,
+.buttonDEL,
+.button11,
+.buttonAC,
+.buttonD,
+.buttonE,
+.buttonZ,
+.buttonN
+{
+    border-radius: 20px;    
+    display: grid;
+    place-items: center;   
+}
+
+.button11 {
+    grid-column: 1/3;
+    font-size: 50px;
+    background: rgb(0, 255, 55);
+    box-shadow: -5px 5px 10px rgb(26, 122, 14)
+}
+
+.buttonAC {
+    grid-column: 3/5;
+    font-size: 25px;
+    background: rgba(255, 0, 0, 0.849);
+    box-shadow: -5px 5px 10px rgb(122, 14, 14)
+}
+
+.buttonDEL {
+    grid-column: 5/6;
+    grid-row: -3/-1;
+    font-size: 25px;
+    background: rgba(255, 0, 0, 0.849);
+    box-shadow: -5px 5px 10px rgb(122, 14, 14)
+}
+
+.buttonD,
+.buttonE,
+.buttonN,
+.buttonZ {
+    background: rgb(255, 123, 0);
+    font-size: 25px;
+    color: white;
+    box-shadow: -5px 5px 10px rgb(156, 91, 6)
+}
